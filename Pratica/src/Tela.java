@@ -30,15 +30,16 @@ public class Tela extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         valor_nota = new javax.swing.JComboBox<>();
-        jLabel4 = new javax.swing.JLabel();
         Valor_nome = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
         Valor_idade = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         Resultado = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setForeground(new java.awt.Color(204, 51, 0));
-        setPreferredSize(new java.awt.Dimension(680, 400));
+        setPreferredSize(new java.awt.Dimension(650, 400));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
@@ -58,10 +59,6 @@ public class Tela extends javax.swing.JFrame {
         });
         getContentPane().add(valor_nota, new org.netbeans.lib.awtextra.AbsoluteConstraints(246, 145, -1, -1));
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel4.setText("Escolha a nota de Avaliacao");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 145, -1, -1));
-
         Valor_nome.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, null, null, java.awt.Color.darkGray));
         Valor_nome.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -69,6 +66,10 @@ public class Tela extends javax.swing.JFrame {
             }
         });
         getContentPane().add(Valor_nome, new org.netbeans.lib.awtextra.AbsoluteConstraints(175, 63, 97, -1));
+
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel4.setText("Escolha a nota de Avaliacao");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 145, -1, -1));
 
         Valor_idade.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, null, null, java.awt.Color.darkGray));
         getContentPane().add(Valor_idade, new org.netbeans.lib.awtextra.AbsoluteConstraints(175, 107, 97, -1));
@@ -86,6 +87,10 @@ public class Tela extends javax.swing.JFrame {
         Resultado.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         Resultado.setText("Informação ");
         getContentPane().add(Resultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 260, -1, -1));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/matriz-bordado-mix-mateus-bordado-removebg-preview.png"))); // NOI18N
+        jLabel5.setText("jLabel5");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(-7, -8, 830, 400));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -117,6 +122,10 @@ public class Tela extends javax.swing.JFrame {
         String mensagem = nome + " agradecemos por sua nota " + nota + "." ;
         
         Resultado.setText(mensagem);
+        
+        
+        
+        
         
         
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -154,6 +163,7 @@ public class Tela extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JComboBox<String> valor_nota;
     // End of variables declaration//GEN-END:variables
 }
