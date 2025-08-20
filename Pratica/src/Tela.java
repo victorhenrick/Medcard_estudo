@@ -27,6 +27,7 @@ public class Tela extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel5 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         valor_nota = new javax.swing.JComboBox<>();
@@ -35,20 +36,21 @@ public class Tela extends javax.swing.JFrame {
         Valor_idade = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         Resultado = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/matriz-bordado-mix-mateus-bordado-removebg-preview.png"))); // NOI18N
+        jLabel5.setText("jLabel5");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setForeground(new java.awt.Color(204, 51, 0));
-        setPreferredSize(new java.awt.Dimension(650, 400));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel1.setText("Digite seu Nome: ");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 58, -1, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel2.setText("Digite sua Idade:");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 102, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, -1, -1));
 
         valor_nota.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         valor_nota.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "10", "9", "8", "7", "6", "5", "4", "3", "2", "1" }));
@@ -57,7 +59,7 @@ public class Tela extends javax.swing.JFrame {
                 valor_notaActionPerformed(evt);
             }
         });
-        getContentPane().add(valor_nota, new org.netbeans.lib.awtextra.AbsoluteConstraints(246, 145, -1, -1));
+        getContentPane().add(valor_nota, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 170, -1, -1));
 
         Valor_nome.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, null, null, java.awt.Color.darkGray));
         Valor_nome.addActionListener(new java.awt.event.ActionListener() {
@@ -65,14 +67,14 @@ public class Tela extends javax.swing.JFrame {
                 Valor_nomeActionPerformed(evt);
             }
         });
-        getContentPane().add(Valor_nome, new org.netbeans.lib.awtextra.AbsoluteConstraints(175, 63, 97, -1));
+        getContentPane().add(Valor_nome, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 30, 97, -1));
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel4.setText("Escolha a nota de Avaliacao");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 145, -1, -1));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, -1, -1));
 
         Valor_idade.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, null, null, java.awt.Color.darkGray));
-        getContentPane().add(Valor_idade, new org.netbeans.lib.awtextra.AbsoluteConstraints(175, 107, 97, -1));
+        getContentPane().add(Valor_idade, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 70, 97, -1));
 
         jButton1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jButton1.setText("ENVIAR RESPOSTA ");
@@ -82,15 +84,11 @@ public class Tela extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(137, 198, -1, -1));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 230, -1, -1));
 
         Resultado.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         Resultado.setText("Informação ");
-        getContentPane().add(Resultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 260, -1, -1));
-
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/matriz-bordado-mix-mateus-bordado-removebg-preview.png"))); // NOI18N
-        jLabel5.setText("jLabel5");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(-7, -8, 830, 400));
+        getContentPane().add(Resultado, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

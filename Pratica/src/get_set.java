@@ -2,7 +2,8 @@
 
 public class get_set {
     int nota, idade;
-    String nome, resultado,mensagem;
+    String nome, resultado,mensagem,email;
+            
 
     public String getMensagem() {
         return mensagem;
