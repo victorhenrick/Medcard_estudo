@@ -1,29 +1,28 @@
-*{
-   margin: 0;
-padding: 0;
-box-sizing: border-box;
 
-}
 
 body {
-
+margin: 0;
 font-family: 'Inter', sans-serif;
-background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+background: linear-gradient(135deg, #43454e 0%, #e1d9e9 100%);
 min-height: 100vh;
 overflow-x: hidden;
 
-
-
-
 }
+
 
 .nome{
     color: #1d1d1d;
     font-size: 45px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-left: 350px;
     margin-top: 200px;
+    text-align: center;
     
+}
+.nome:hover{
+    transform: scale(1.05);
+     transition: all 0.1s ease;
+     
+
 }
 .subTitle{
 font-size: 1.25rem;
@@ -34,5 +33,32 @@ max-width: 500px;
 margin: 0 auto;
 
 
-
 }
+
+.menu{
+    display:flex;
+    justify-content: center; /* centraliza horizontalmenet */
+    gap: 30px; /* espaçamento entre os card*/
+    flex-wrap: wrap; /* quebra de linha se a tela for pequena */
+}
+
+
+.card {
+      width: 200px;
+      height: 120px;
+      background: rgba(255, 255, 255, 0.2); /* Transparência */
+      border-radius: 15px;
+      backdrop-filter: blur(5px); /* efeito de vidro fosco */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      color: black;
+      cursor: pointer;
+      transition: transform 0.3s, background 0.3s;
+    }
+ .card:hover {
+      transform: scale(1.05);
+      background: rgba(255, 255, 255, 0.3);
+  
+    }
